@@ -1,0 +1,28 @@
+﻿@model ReTask.Models.ViewModel.UserDTO
+@{
+}
+<h1>Register</h1>
+<form method="post" action="Register">
+    <div class="mb-3">
+        <label for="" class="form-label">FirstName</label>
+        <input type="text" class="form-control" asp-for="FirstName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">LastName</label>
+        <input type="text" class="form-control" asp-for="LastName">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">PhoneNumber</label>
+        <input type="text" class="form-control" asp-for="PhoneNumber">
+    </div>
+
+    <div class="mb-3">
+        <label for="" class="form-label">PassWord</label>
+        <input type="password" class="form-control" asp-for="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">SignUp</button>
+</form>

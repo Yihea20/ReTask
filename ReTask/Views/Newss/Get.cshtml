@@ -1,0 +1,22 @@
+﻿@model ReTask.Models.News
+@{
+}
+<form method="post" action="Get">
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="Title">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Subject</label>
+        <input type="text" class="form-control" asp-for="Subject">
+    </div>
+<div class="mb-3">
+        <label for="" class="form-label">Date</label>
+        <input type="date" class="form-control" asp-for="Time">
+    </div>
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>

@@ -1,0 +1,16 @@
+﻿@model ReTask.Models.ViewModel.NewsDTO
+@{
+}
+<h1>Add News</h1>
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="" class="form-label">Title</label>
+        <input type="text" class="form-control" asp-for="Title">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">Subject</label>
+        <input type="text" class="form-control" asp-for="Subject">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>

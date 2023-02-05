@@ -1,0 +1,29 @@
+﻿@model List<ReTask.Models.News>
+@{
+}
+<h1>Newss</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Subject</th>
+            <th>Date</th>
+            <th> </th>
+            <th> </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var news in Model)
+        {
+            <tr>
+                <td>@news.Id</td>
+                <td>@news.Title</td>
+                <td>@news.Subject</td>
+                <td>@news.Time.ToString("dd-MM-yyyy")</td>
+                <td><a href="Get/@news.Id">Get</a></td>
+                <td><a href="Delet/@news.Id">Delet</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

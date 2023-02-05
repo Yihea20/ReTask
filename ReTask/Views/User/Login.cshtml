@@ -1,0 +1,14 @@
+﻿@model  ReTask.Models.ViewModel.LoginUserDTO
+@{
+}
+<form method="post" action="Login">
+    <div class="mb-3">
+        <label for="" class="form-label">Email</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="mb-3">
+        <label for="" class="form-label">PassWord</label>
+        <input type="password" class="form-control" asp-for="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
